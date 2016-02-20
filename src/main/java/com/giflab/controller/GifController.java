@@ -11,4 +11,10 @@ public class GifController {
   public String listGifs() {
     return "List of all the GIFs";
   }
+
+  @RequestMapping("/gif")
+  @ResponseBody
+  public String showGif() {
+    return "Show single GIF";
+  }
 }
